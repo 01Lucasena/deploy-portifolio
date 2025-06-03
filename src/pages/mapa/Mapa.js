@@ -88,6 +88,7 @@ export default function Mapa() {
                 Estrela central do sistema. Fonte de energia e conexão entre os mundos.
               </div>
             </div>
+            <br><br><br></br>
 
             {Array.from({ length: 50 }).map((_, i) => (
               <div

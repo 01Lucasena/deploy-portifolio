@@ -2,7 +2,8 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+
 import MenuBar from './components/MenuBar';
 
 import Mapa from './pages/mapa/Mapa';
@@ -10,7 +11,6 @@ import Terra from './pages/terra/Terra';
 import Saturno from './pages/saturno/Saturno';
 import Estacao from './pages/estacao/Estacao';
 import Orion from './pages/orion/Orion';
-
 
 function BackgroundWrapper({ children }) {
   const location = useLocation();
@@ -41,13 +41,35 @@ function AnimatedRoutes() {
   );
 }
 
+function AppContent() {
+  const location = useLocation();
+
+  return (
+    <BackgroundWrapper>
+      <AnimatePresence>
+        {location.pathname !== '/' && (
+          <motion.div
+            key="menu-bar"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
+            <MenuBar />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatedRoutes />
+    </BackgroundWrapper>
+  );
+}
+
 export default function App() {
   return (
     <Router>
-      <BackgroundWrapper>
-        <MenuBar />
-        <AnimatedRoutes />
-      </BackgroundWrapper>
+      <AppContent />
     </Router>
   );
 }
+
