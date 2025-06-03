@@ -1,0 +1,50 @@
+.terra-imagem {
+    width:50%;
+    margin-left: 30%;
+}
+
+.terra-page {
+  max-width: 800px;
+  margin: 100px auto 50px;
+  padding: 1.5rem;
+  background-color: rgba(10, 10, 25, 0.6);
+  border-radius: 16px;
+  color: #e0e8ff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  background-image: "../assets/terra-background.jpeg";
+  
+}
+
+.terra-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #81c7ff;
+  margin-left: 20%;
+}
+
+.terra-page h2 {
+  margin-top: 2rem;
+  color: #99d1ff;
+}
+
+.terra-page p {
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.terra-page ul {
+  padding-left: 1.5rem;
+}
+
+.terra-page li {
+  margin-top: 0.5rem;
+}
+
+.terra-page h1,
+.terra-page h2,
+.terra-page p,
+.terra-page ul,
+.terra-page li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

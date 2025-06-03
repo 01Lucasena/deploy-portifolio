@@ -1,0 +1,49 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  overflow: auto;
+}
+
+.pagina-conteudo {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #aabaff;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+
+.default-bg,
+.mapa-bg,
+.terra-bg,
+.saturno-bg,
+.estacao-bg,
+.orion-bg,
+.base-bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+

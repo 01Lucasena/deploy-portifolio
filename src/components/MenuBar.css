@@ -1,0 +1,34 @@
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: rgba(5, 5, 20, 0.8);
+  backdrop-filter: blur(6px);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+.menu-bar button {
+  background: #0d0f2b;
+  color: #c0d4ff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu-bar button:hover {
+  background: #1a1d4d;
+  transform: scale(1.05);
+}
+
+.menu-bar button.active {
+  background: #2a3b77;
+}

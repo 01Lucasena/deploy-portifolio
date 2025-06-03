@@ -1,0 +1,349 @@
+.mapa-container {
+  margin-top: 48px;
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #0b0c1a 0%, #010114 90%);
+  color: #aaddff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.mapa-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 0%, transparent 70%),
+              radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.02) 0%, transparent 60%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cenario {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.planeta {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #aaccff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  user-select: none;
+  z-index: 2; 
+}
+
+.mapa-titulo {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: #aaddff;
+  text-shadow: 0 0 8px #88aaff;
+  z-index: 5;
+}
+
+.mapa-descricao {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 600px;
+  font-size: 0.7rem;
+  color: #ddd;
+  text-align: center;
+  z-index: 5;
+}
+
+.planeta:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 12px #aaddff);
+  z-index: 10;
+}
+
+.planeta-img {
+  width: clamp(40px, 6vw, 80px);
+  height: clamp(40px, 6vw, 80px);
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(10, 10, 20, 0.85);
+  padding: clamp(4px, 1vw, 10px);
+  border-radius: 8px;
+  max-width: clamp(120px, 20vw, 200px);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  user-select: none;
+}
+
+.nome {
+  font-weight: bold;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  margin-bottom: 4px;
+}
+
+.descricao {
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color: #aaddff;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+  opacity: 0.2;
+  z-index: -1; 
+}
+
+.orbitas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orbita {
+  position: absolute;
+  border: 1px dashed rgba(173, 216, 255, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbita1 {
+  width: 30vw;
+  height: 30vw;
+}
+
+.orbita2 {
+  width: 45vw;
+  height: 45vw;
+}
+
+.orbita3 {
+  width: 60vw;
+  height: 60vw;
+}
+
+.orbita4 {
+  width: 75vw;
+  height: 75vw;
+}
+
+.astra {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.astra-img {
+  width: 200px;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.astra-descricao {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 5px;
+  max-width: 200px;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+
+.mapa-botao {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0c1024;
+  color: #aaddff;
+  padding: 10px 24px;
+  border: 1px solid #2a4b77;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(100,150,255,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  z-index: 5;
+  user-select: none;
+}
+
+.mapa-botao:hover {
+  background: #1b203a;
+  box-shadow: 0 0 16px rgba(173,216,255,0.5);
+}
+
+
+
+@media (max-width: 768px) {
+  .planeta {
+    transform: scale(0.85);
+  }
+
+  .mapa-titulo {
+    font-size: 1.2rem;
+  }
+
+  .mapa-descricao {
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
+
+  .orbita {
+    transform: scale(0.85) translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .astra-img {
+    width: 140px;
+  }
+
+  .planeta-img {
+    width: clamp(30px, 5vw, 60px);
+    height: clamp(30px, 5vw, 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .mapa-container {
+    overflow-y: auto; 
+    height: 100vh;
+    padding: 20px 0;
+    padding-top: 120px;
+  }
+
+  .astra-img {
+    width: 120px !important;
+  }
+
+  .planeta {
+    position: static !important; 
+    margin: 8px auto;
+    transform: none !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .planeta-img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .info {
+    max-width: 90vw !important;
+    padding: 6px 12px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .orbita, .orbitas, .star {
+    display: none; 
+  }
+
+  .mapa-titulo {
+    font-size: 1.2rem !important;
+    top: 10px !important;
+  }
+
+  .mapa-descricao {
+    font-size: 0.75rem !important;
+    padding: 0 15px !important;
+    top: 40px !important;
+  }
+
+  .mapa-botao {
+    bottom: 15px !important;
+    font-size: 0.9rem !important;
+    padding: 8px 16px !important;
+  }
+}
+
+/* Container do layout mobile */
+.planetas-lista-mobile {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+  
+  ;
+}
+
+/* Cada planeta na lista mobile */
+.planeta-mobile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #aaddff;
+  text-decoration: none;
+  background: rgba(10, 10, 20, 0.9);
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 90vw;
+  max-width: 400px;
+  transition: background-color 0.3s ease;
+}
+
+.planeta-mobile:hover {
+  background: rgba(20, 30, 50, 0.9);
+}
+
+/* Imagem do planeta no mobile */
+.planeta-img-mobile {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+/* Info do planeta (nome + descrição) */
+.info-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Nome do planeta */
+.info-mobile .nome {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+/* Descrição */
+.info-mobile .descricao {
+  font-size: 0.9rem;
+  color: #aaddff;
+  line-height: 1.3;
+}
+
+

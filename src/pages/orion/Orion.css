@@ -1,0 +1,79 @@
+/* src/styles/Lua.css */
+.lua-page {
+  max-width: 800px;
+  margin: 100px auto 50px;
+  padding: 1.5rem;
+  background-color: rgba(15, 15, 35, 0.6);
+  border-radius: 16px;
+  color: #e4eaff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.lua-page h1 {
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #cdd6ff;
+}
+
+.lua-page h2 {
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 2rem;
+  color: #c6d2ff;
+}
+
+.lua-page p, .lua-page li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.lua-page ul {
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.lua-page a {
+  color: #88c0ff;
+  text-decoration: none;
+}
+
+.lua-page a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #10142a;
+  color: #e6ecff;
+}
+
+.contact-form button {
+  background: #283770;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #3a4fa3;
+}
+
+.orion-imagem {
+ width: 50%;
+ margin-left: 25%;
+}
