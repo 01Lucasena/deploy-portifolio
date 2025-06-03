@@ -68,7 +68,7 @@ export default function Mapa() {
       <p className="mapa-descricao">
         Esse é o mapa do Sistema Astrax, o universo do meu portifolio. 
       </p>
-      <br /><br /><br />
+      <br />
 
       {!isMobile ? (
         <>
