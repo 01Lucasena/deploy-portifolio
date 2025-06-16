@@ -9,7 +9,7 @@ html, body, #root {
 
 .pagina-conteudo {
   max-width: 800px;
-  margin: 60px auto;
+  margin: 0 auto;
   padding: 0 20px;
   color: #ddd;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

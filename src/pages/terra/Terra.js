@@ -10,7 +10,7 @@ export default function Terra() {
     <PageWrapper>
       <div className="terra-page">
         <h1>Terra / Base de Origem</h1>
-        <p> aqui que minha jornada começou. No planeta azul, desenvolvi minha paixão por transformar ideias em códigos e minha missão de explorar o universo do desenvolvimento web.
+        <p> Aqui que minha jornada começou. No planeta azul, desenvolvi minha paixão por transformar ideias em códigos e minha missão de explorar o universo do desenvolvimento web.
       </p>
 
         <section>
