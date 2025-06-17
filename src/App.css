@@ -1,9 +1,12 @@
 html, body, #root {
   margin: 0;
   padding: 0;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  background: black;
   overflow: auto;
 }
 
@@ -27,23 +30,6 @@ p {
   line-height: 1.6;
   margin-bottom: 40px;
 }
-
-
-.default-bg,
-.mapa-bg,
-.terra-bg,
-.saturno-bg,
-.estacao-bg,
-.orion-bg,
-.base-bg {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover; 
-  display: flex;
-  flex-direction: column;
-}
-
 
 
 

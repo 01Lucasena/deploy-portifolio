@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import MenuBar from './components/MenuBar';
+import MenuBar from './components/menu-bar/MenuBar';
 
 import Mapa from './pages/mapa/Mapa';
 import Terra from './pages/terra/Terra';
@@ -47,7 +47,7 @@ function AppContent() {
   return (
     <BackgroundWrapper>
       <AnimatePresence>
-        {location.pathname !== '/' && (
+        {location.pathname && (
           <motion.div
             key="menu-bar"
             initial={{ opacity: 0, y: -20 }}

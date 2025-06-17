@@ -1,9 +1,9 @@
 // pages/Terra.js
 import React from 'react';
-import PageWrapper from '../../components/PageWrapper';
+import PageWrapper from '../../components/page-wrapper/PageWrapper';
 import '../../App';
 import './Terra.css';
-import Tecnologias from '../../components/Tecnologias';
+import Tecnologias from '../../components/tecnologias/Tecnologias';
 
 export default function Terra() {
   return (

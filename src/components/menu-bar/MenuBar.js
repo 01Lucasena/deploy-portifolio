@@ -7,7 +7,7 @@ export default function MenuBar() {
   const navigate = useNavigate();
 
   const menuItems = [
-    { label: 'Mapa do Sistema', path: '/' },
+    { label: 'Home', path: '/' },
     { label: 'Terra', path: '/terra' },
     { label: 'Saturno', path: '/saturno' },
     { label: 'Estação Espacial', path: '/estacao' },
