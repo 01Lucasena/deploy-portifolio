@@ -8,7 +8,7 @@ import Saturno from '../../assets/saturno.png';
 import Estacao from '../../assets/estacao.png';
 import Orion from '../../assets/orion.png';
 import Astrax from '../../assets/astrax.png';
-import Banner from '../../components/banner/Banner.js';
+
 
 export default function Mapa() {
   const [isMobile, setIsMobile] = useState(false);
@@ -59,7 +59,7 @@ export default function Mapa() {
 
   return (
     <>
-      <Banner></Banner>
+      
       <motion.div
         className="mapa-container"
         initial={{ opacity: 0, y: 20 }}
@@ -68,9 +68,6 @@ export default function Mapa() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="mapa-titulo">Sistema Astrax</h1>
-        <p className="mapa-descricao">
-          Esse é o mapa do Sistema Astrax, o universo do meu portfólio.
-        </p>
 
         <br /><br /><br />
 

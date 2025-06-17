@@ -1,34 +1,39 @@
 .menu-bar {
-  margin-left: 35% ;
+  position: sticky;
   top: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
-  background: rgba(5, 5, 20, 0.8);
-  backdrop-filter: blur(6px);
+  padding: 0.75rem 1.5rem;
+  background: black;
+  backdrop-filter: blur(8px);
   display: flex;
-  gap: 0.5rem;
+  justify-content: center; /* ← Centraliza os botões */
   align-items: center;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   flex-wrap: wrap;
+  gap: 1rem;
+  z-index: 1000;
 }
 
 .menu-bar button {
-  background: #0d0f2b;
-  color: #c0d4ff;
+  background: black;
+  color: #FFFF82;
   border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .menu-bar button:hover {
-  background: #1a1d4d;
+  background: black;
+  color: #2EC4B6;
   transform: scale(1.05);
 }
 
 .menu-bar button.active {
-  background: #2a3b77;
+  background: black;
+  color: #2EC4B6;
+  border: none;
 }

@@ -4,7 +4,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import Header from './components/header/Header';
 import MenuBar from './components/menu-bar/MenuBar';
+import Footer from './components/footer/Footer';
 
 import Mapa from './pages/mapa/Mapa';
 import Terra from './pages/terra/Terra';
@@ -55,12 +57,14 @@ function AppContent() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
-            <MenuBar />
+            <Header />
+            
           </motion.div>
         )}
       </AnimatePresence>
-
+      <MenuBar />
       <AnimatedRoutes />
+      <Footer />
     </BackgroundWrapper>
   );
 }
@@ -72,4 +76,3 @@ export default function App() {
     </Router>
   );
 }
-
