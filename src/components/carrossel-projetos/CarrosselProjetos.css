@@ -1,0 +1,83 @@
+.carrossel-wrapper {
+  padding: 0 1rem;
+  color: #FFFF82;
+}
+
+.carrossel-wrapper .slick-slide > div {
+  display: flex;
+  justify-content: center;
+}
+
+.carrossel-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carrossel-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.5rem auto
+}
+
+.carrossel-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #FFFF82;
+}
+
+.descricao {
+  color: #F7F0F5;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.tags {
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: black;
+  color: #FFFF82;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+  border: 1px solid #444;
+}
+
+.detalhes {
+  color: #F7F0F5;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .carrossel-card {
+    padding: 1.5rem;
+  }
+
+  .carrossel-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .carrossel-img {
+    max-width: 100%;
+  }
+}
