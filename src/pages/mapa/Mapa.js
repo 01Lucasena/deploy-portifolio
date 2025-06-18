@@ -83,10 +83,6 @@ export default function Mapa() {
             <div className="cenario">
               <div className="astra">
                 <img src={Astrax} alt="Astrax" className="astra-img" />
-                <div className="astra-descricao">
-                  <strong>Astrax</strong><br />
-                  Estrela central do sistema. Fonte de energia e conexão entre os mundos.
-                </div>
               </div>
 
               {Array.from({ length: 50 }).map((_, i) => (
