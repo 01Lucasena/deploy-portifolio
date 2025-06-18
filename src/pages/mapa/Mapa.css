@@ -36,7 +36,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #aaccff;
+  color: #FFFF82;
+  font-family: 'Exo 2', sans-serif;
   text-decoration: none;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -60,14 +61,15 @@
   transform: translateX(-50%);
   max-width: 600px;
   font-size: 0.7rem;
-  color: #ddd;
+  color: #F7F0F5;
+  font-family: 'Exo 2', sans-serif;
   text-align: center;
   z-index: 5;
 }
 
 .planeta:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 12px #aaddff);
+  filter: drop-shadow(0 0 12px #ffff82);
   z-index: 10;
 }
 
@@ -99,7 +101,7 @@
 
 .descricao {
   font-size: clamp(0.7rem, 1vw, 0.9rem);
-  color: #aaddff;
+  color: #F7F0F5;
 }
 
 @keyframes twinkle {
@@ -171,7 +173,8 @@
 
 .astra-descricao {
   font-size: 0.9em;
-  color: #ccc;
+  color: #F7F0F5;
+  font-family: 'Exo 2', sans-serif;
   margin-top: 5px;
   max-width: 200px;
 }
@@ -303,7 +306,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #aaddff;
+  color: #FFFF82;
+  font-family: 'Orbitron', sans-serif;
   text-decoration: none;
   background: rgba(10, 10, 20, 0.9);
   border-radius: 10px;
@@ -343,8 +347,7 @@
 /* Descrição */
 .info-mobile .descricao {
   font-size: 0.9rem;
-  color: #aaddff;
+  color: #F7F0F5;
+  font-family: 'Exo 2', sans-serif;
   line-height: 1.3;
 }
-
-
