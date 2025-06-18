@@ -1,6 +1,8 @@
 import './Header.css';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import astronauta from '../../assets/astronauta.png';
+import SaturnoSVG from '../../assets/saturno.svg';
+
 
 export default function Banner() {
   return (
@@ -37,6 +39,11 @@ export default function Banner() {
       <div className="banner-image">
         <img src={astronauta} alt="Astronauta" className="astronauta-img" />
       </div>
+
+      <div className="divisoria">
+        <img src={SaturnoSVG} alt="Saturno" className="saturno-img" />  
+      </div>
+
     </div>
   );
 }
