@@ -1,48 +1,51 @@
 import './Header.css';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import astronauta from '../../assets/astronauta.png';
-import SaturnoSVG from '../../assets/saturno.svg';
-
+import { useTranslation } from 'react-i18next';
 
 export default function Banner() {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt');
+  };
+
   return (
     <div className="banner">
+      {/* Botão de troca de idioma no canto superior direito */}
+      <button
+        onClick={toggleLanguage}
+        className="lang-switcher"
+        aria-label="Alternar idioma"
+      >
+        {i18n.language === 'pt' ? '🇧🇷 PT' : '🇺🇸 EN'}
+      </button>
+
       <div className="banner-content">
-        <h2>
-          Desenvolvimento Web Full Stack <br />
-          <br />
-          Construindo experiências digitais que conectam pessoas e negócios
-        </h2>
-        <h3>
-          Design criado por: <strong>Lucas Barbosa S. Sena</strong>
-        </h3>
-        <p>
-          Navegue pelo sistema do meu portifólio para explorar meus projetos, habilidades e trajetórias.
-          <br />
-        </p>
-        <p>Conecte-se comigo nas redes sociais:</p>
+        <h2>{t('banner.name')}</h2>
+        <h3>{t('banner.role')}</h3>
+        <p>{t('banner.desc1')}</p>
+        <p>{t('banner.desc2')}</p>
+        <p><strong>{t('banner.connect')}</strong></p>
 
         <div className="social-buttons">
           <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noreferrer">
-            <button><FaLinkedin /> LinkedIn</button>
+            <button><FaLinkedin /> {t('banner.linkedin')}</button>
           </a>
           <a href="https://github.com/01Lucasena" target="_blank" rel="noreferrer">
-            <button><FaGithub /> GitHub</button>
+            <button><FaGithub /> {t('banner.github')}</button>
           </a>
           <a href="https://instagram.com/iamlucasena" target="_blank" rel="noreferrer">
-            <button><FaInstagram /> Instagram</button>
+            <button><FaInstagram /> {t('banner.instagram')}</button>
           </a>
         </div>
+
+        <div style={{ height: '10vh' }} /> {/* espaçamento */}
       </div>
 
       <div className="banner-image">
         <img src={astronauta} alt="Astronauta" className="astronauta-img" />
       </div>
-
-      <div className="divisoria">
-        <img src={SaturnoSVG} alt="Saturno" className="saturno-img" />  
-      </div>
-
     </div>
   );
 }

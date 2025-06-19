@@ -3,7 +3,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 3rem 5vw;
-  background: black;
+  background: 
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,    
+      rgba(0, 0, 0, 0.7) 30%,   
+      rgba(0, 0, 0, 0.3) 60%,   
+      transparent 90%            
+    ),
+    url('../../assets/header-background.jpg') center/cover no-repeat;
+
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -34,7 +43,7 @@
 }
 
 .banner-content strong {
-  color: #2EC4B6;
+  color: #FFFF82;
 }
 
 .social-buttons {
@@ -125,3 +134,13 @@
   padding: 0 1rem;
 }
 
+.lang-switcher {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}

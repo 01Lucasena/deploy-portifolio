@@ -8,10 +8,10 @@ export default function MenuBar() {
 
   const menuItems = [
     { label: 'Home', path: '/' },
-    { label: 'Terra', path: '/terra' },
-    { label: 'Saturno', path: '/saturno' },
-    { label: 'Marte', path: '/estacao' },
-    { label: 'Urano', path: '/orion' },
+    { label: 'Sobre Mim', path: '/terra' },
+    { label: 'Projetos', path: '/saturno' },
+    { label: 'Jornada', path: '/estacao' },
+    { label: 'Contato', path: '/orion' },
   ];
 
   return (
