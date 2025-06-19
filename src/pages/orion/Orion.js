@@ -25,7 +25,7 @@ export default function Orion() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
-      <h1>Orion / Centro de Comunicações</h1>
+      <h1>Urano</h1>
       <p>
         Esta é a estação de comunicação do sistema Astrax. Se você quiser entrar em contato comigo, este é o canal direto entre nossos mundos.
       </p>

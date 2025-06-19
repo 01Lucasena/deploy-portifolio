@@ -40,7 +40,7 @@ export default function Mapa() {
       descricao: 'Projetos – veja o que desenvolvi.',
     },
     {
-      nome: 'Estação Espacial',
+      nome: 'Marte',
       img: Estacao,
       rota: '/estacao',
       x: '75%',
@@ -48,7 +48,7 @@ export default function Mapa() {
       descricao: 'Linha do tempo – minha jornada como dev.',
     },
     {
-      nome: 'Orion',
+      nome: 'Urano',
       img: Orion,
       rota: '/orion',
       x: '34%',
@@ -67,7 +67,7 @@ export default function Mapa() {
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="mapa-titulo">Sistema Astrax</h1>
+        <h1 className="mapa-titulo">Sistema Solar</h1>
 
         <br /><br /><br />
 

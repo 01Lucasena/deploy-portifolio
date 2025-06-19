@@ -17,9 +17,8 @@ export default function Banner() {
           Design criado por: <strong>Lucas Barbosa S. Sena</strong>
         </h3>
         <p>
-          Navegue pelo Sistema Astrax para explorar meus projetos, habilidades e trajetórias.
+          Navegue pelo Sistema do meu portifólio para explorar meus projetos, habilidades e trajetórias.
           <br />
-          Cada planeta representa um universo de soluções criativas e tecnologia de ponta.
         </p>
         <p>Conecte-se comigo nas redes sociais:</p>
 
@@ -27,10 +26,10 @@ export default function Banner() {
           <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noreferrer">
             <button><FaLinkedin /> LinkedIn</button>
           </a>
-          <a href="https://github.com/seuusuario" target="_blank" rel="noreferrer">
+          <a href="https://github.com/01Lucasena" target="_blank" rel="noreferrer">
             <button><FaGithub /> GitHub</button>
           </a>
-          <a href="https://instagram.com/seuusuario" target="_blank" rel="noreferrer">
+          <a href="https://instagram.com/iamlucasena" target="_blank" rel="noreferrer">
             <button><FaInstagram /> Instagram</button>
           </a>
         </div>

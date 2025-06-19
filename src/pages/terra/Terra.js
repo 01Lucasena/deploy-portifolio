@@ -8,29 +8,17 @@ export default function Terra() {
   return (
     <PageWrapper>
       <main className="terra-container">
-        <motion.section 
-          className="hero-section" 
-          initial={{ opacity: 0, y: -20 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.6 }}
-        >
+        
           <h1>Terra</h1>
           <p>
             Aqui começou minha jornada. No planeta azul, nasceu minha paixão por transformar ideias em código e minha missão de explorar o universo do desenvolvimento web.
           </p>
-        </motion.section>
 
-        <motion.section 
-          className="sobre-section"
-          initial={{ opacity: 0 }} 
-          whileInView={{ opacity: 1 }} 
-          transition={{ duration: 0.6 }}
-        >
           <h2>Quem sou eu</h2>
           <p>
             Olá! Sou <strong>Lucas Sena</strong>, estudante de Desenvolvimento de Sistemas no <em>SENAI Dendezeiros</em> (Salvador/BA). Sou movido por desafios e apaixonado por criar soluções digitais que impactam positivamente.
           </p>
-        </motion.section>
+        
 
         <motion.section 
           className="habilidades-section"

@@ -1,69 +1,21 @@
-/* src/styles/EstacaoEspacial.css */
 .estacao-page {
-  max-width: 900px;
-  margin: 100px auto 50px;
-  padding: 1.5rem;
-  color: #e2eaff;
-  background-color: rgba(12, 18, 35, 0.6);
-  border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #F7F0F5;
+  font-family: 'Exo 2', sans-serif;
+  background: black;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .estacao-page h1 {
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #90caff;
 }
 
 .estacao-page p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 2rem;
   font-size: 1.1rem;
-}
-
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.evento {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  padding-left: 2rem;
-  border-left: 2px solid #5ba1ff;
-}
-
-.evento::before {
-  content: '';
-  position: absolute;
-  left: -7px;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  background-color: #5ba1ff;
-  border-radius: 50%;
-}
-
-.ano {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #a8caff;
-}
-
-.conteudo h3 {
-  margin: 0.2rem 0;
-  color: #d3e7ff;
-}
-
-.conteudo p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.estacao-img{
-  width: 50%;
-  margin-left: 20%;
+  color: #F7F0F5;
+  margin-bottom: 4rem;
 }

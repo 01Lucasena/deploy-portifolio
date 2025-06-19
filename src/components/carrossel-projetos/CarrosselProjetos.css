@@ -9,9 +9,7 @@
 }
 
 .carrossel-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid #333;
-  border-radius: 20px;
+  background:black;
   padding: 2rem;
   display: flex;
   flex-direction: column;

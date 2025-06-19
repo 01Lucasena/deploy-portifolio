@@ -10,8 +10,8 @@ export default function MenuBar() {
     { label: 'Home', path: '/' },
     { label: 'Terra', path: '/terra' },
     { label: 'Saturno', path: '/saturno' },
-    { label: 'Estação Espacial', path: '/estacao' },
-    { label: 'Orion', path: '/orion' },
+    { label: 'Marte', path: '/estacao' },
+    { label: 'Urano', path: '/orion' },
   ];
 
   return (
