@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 4rem 1rem;
   max-width: 1000px;
+  box-sizing: border-box;
 }
 
 .timeline-line {
@@ -12,8 +13,9 @@
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
-  background: #FFFF82; 
+  background: #FFFF82;
   z-index: 1;
+  opacity: 1;
 }
 
 .evento {
@@ -27,72 +29,49 @@
   z-index: 2;
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-
-.evento.left {
-  left: -10%;  /* mais para esquerda */
-  text-align: right;
   clear: both;
-  padding-right: 3rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center;  /* Centraliza o texto */
+  float: none; /* Remove floats para evitar conflito */
+  left: 0;
 }
 
+/* Ícones na cor amarela */
+.evento svg {
+  color: #FFFF82 !important;
+  fill: #FFFF82 !important;
+}
+
+/* Mantém espaçamentos diferenciados para esquerda e direita */
+.evento.left {
+  margin-left: 0;
+}
 
 .evento.right {
-  left: 57%;
-  text-align: left;
+  margin-left: auto;
+}
+
+/* Clearfix para o container */
+.timeline-container::after {
+  content: "";
+  display: table;
   clear: both;
-  padding-left: 3rem;
-}
-
-
-
-
-.icone {
-  font-size: 2rem;
-  color: #FFFF82;
-  margin-bottom: 0.6rem;
-}
-
-.ano {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #FFFF82;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.conteudo h3 {
-  font-size: 1.4rem;
-  margin: 0.2rem 0;
-  color: #FFFF82;
-}
-
-.conteudo p {
-  font-size: 1rem;
-  color: #cccccc;
-  line-height: 1.6;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
   .timeline-line {
-    left: 16px;
+    display: none; /* Remove a linha no mobile */
   }
 
   .evento {
-    width: 100% !important;
-    left: 0 !important;
-    text-align: left !important;
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
-  }
-
-  .timeline-container > .svg-dot {
-    left: 8px !important;
-    transform: none !important;
-    width: 24px;
-    height: 24px;
+    width: 100%; /* Ocupa toda a largura no mobile */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin: 1.5rem 0;
   }
 }

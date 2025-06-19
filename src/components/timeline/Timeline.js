@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import './Timeline.css';
 
 
-
-
 export default function Timeline({ eventos }) {
   return (
     <div className="timeline-container">

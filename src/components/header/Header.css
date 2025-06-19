@@ -71,11 +71,6 @@
   cursor: pointer;
 }
 
-.social-buttons button:hover {
-  background: black;
-  color: #2EC4B6;
-  transform: scale(1.05);
-}
 
 .banner-image {
   flex: 0 1 300px;
@@ -100,6 +95,7 @@
 
   .banner-image {
     justify-content: center;
+    width: 50%;
   }
 
   .banner-content {
@@ -143,4 +139,60 @@
   font-size: 1.2rem;
   cursor: pointer;
   color: white;
+}
+
+.download-cv-button {
+  background-color: #FFFF82;
+  color: black;
+  font-family: 'Exo 2', sans-serif;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.download-cv-button:hover {
+  background-color: black;
+  color: #FFFF82;
+}
+
+.social-buttons button {
+  background: black;
+  color: #FFFF82;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.social-buttons button:hover {
+  background-color: #FFFF82;
+  color: black;
+}
+
+.cv-label {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #F7F0F5;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 1rem;          /* espaço entre os botões */
+  margin-top: 0.5rem; /* espaçamento em cima */
+  justify-content: flex-start; /* alinha à esquerda; pode usar center se quiser */
+  flex-wrap: wrap;    /* para quebrar linha no mobile */
 }

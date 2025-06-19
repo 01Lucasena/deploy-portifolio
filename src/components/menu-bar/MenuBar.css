@@ -1,19 +1,25 @@
 .menu-bar {
   position: sticky;
   top: 0;
-  width: 100%;
-  padding: 0.75rem 1.5rem;
   background: black;
-  backdrop-filter: blur(8px);
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: center; /* ← Centraliza os botões */
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
+  flex-wrap: wrap;
   z-index: 1000;
 }
 
-.menu-bar button {
+/* Estilo padrão dos botões */
+.menu-items {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Botões do menu */
+.menu-items button {
   background: black;
   color: #FFFF82;
   border: none;
@@ -22,18 +28,87 @@
   font-weight: 600;
   cursor: pointer;
   font-size: 1rem;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
   font-family: 'Orbitron', sans-serif;
 }
 
-.menu-bar button:hover {
-  background: black;
-  color: #2EC4B6;
-  transform: scale(1.05);
+.menu-items button:hover,
+.menu-items button.active {
+  background: #FFFF82;
+  color: black;
 }
 
-.menu-bar button.active {
-  background: black;
-  color: #2EC4B6;
+/* Botão Hamburger - escondido no desktop */
+.hamburger {
+  left: 50%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28px;
+  height: 22px;
+  background: transparent;
   border: none;
+  cursor: pointer;
+  padding: 0;
+  position: sticky;
+  right: 2rem;
+  top: 1.2rem;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #FFFF82;
+  border-radius: 2px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu-items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: black;
+    height: 100vh;
+    width: 220px;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+
+  .menu-items.open {
+    transform: translateX(0);
+  }
+
+  .menu-items button {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: left;
+    border-radius: 0;
+    padding: 1rem 2rem;
+  }
 }

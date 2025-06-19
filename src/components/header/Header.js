@@ -1,7 +1,10 @@
-import './Header.css';
-import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import astronauta from '../../assets/astronauta.png';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Flag from 'react-world-flags';
+import { FaLinkedin, FaGithub, FaInstagram, FaDownload } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import astronauta from '../../assets/astronauta.png';
+import './Header.css';
 
 export default function Banner() {
   const { t, i18n } = useTranslation();
@@ -12,18 +15,41 @@ export default function Banner() {
 
   return (
     <div className="banner">
-      {/* Botão de troca de idioma no canto superior direito */}
       <button
         onClick={toggleLanguage}
         className="lang-switcher"
         aria-label="Alternar idioma"
+        style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'none', border: 'none', cursor: 'pointer' }}
       >
-        {i18n.language === 'pt' ? '🇧🇷 PT' : '🇺🇸 EN'}
+        <Flag code={i18n.language === 'pt' ? 'BR' : 'US'} style={{ width: 24, height: 16 }} />
+        {i18n.language === 'pt' ? 'Português' : 'English'}
       </button>
 
       <div className="banner-content">
         <h2>{t('banner.name')}</h2>
         <h3>{t('banner.role')}</h3>
+
+      
+
+        <div className="banner-buttons">
+          <a
+            whileHover={{ scale: 1.05 }}
+            href="/curriculo-lucas-pt.pdf"
+            download
+            className="download-cv-button"
+          >
+            <FaDownload style={{ marginRight: '0.5rem' }} /> Currículo (PT)
+          </a>
+          <a
+            whileHover={{ scale: 1.05 }}
+            href="/curriculo-lucas-en.pdf"
+            download
+            className="download-cv-button"
+          >
+            <FaDownload style={{ marginRight: '0.5rem' }} /> Resume (EN)
+          </a>
+        </div>
+
         <p>{t('banner.desc1')}</p>
         <p>{t('banner.desc2')}</p>
         <p><strong>{t('banner.connect')}</strong></p>
