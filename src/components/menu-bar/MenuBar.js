@@ -1,17 +1,19 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './MenuBar.css';
 
 export default function MenuBar() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const menuItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Sobre Mim', path: '/terra' },
-    { label: 'Projetos', path: '/saturno' },
-    { label: 'Jornada', path: '/estacao' },
-    { label: 'Contato', path: '/orion' },
+    { label: t('menu.home'), path: '/' },
+    { label: t('menu.about'), path: '/terra' },
+    { label: t('menu.projects'), path: '/saturno' },
+    { label: t('menu.journey'), path: '/estacao' },
+    { label: t('menu.contact'), path: '/orion' },
   ];
 
   return (

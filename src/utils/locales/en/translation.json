@@ -8,5 +8,27 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "instagram": "Instagram"
+  },
+
+   "menu": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "journey": "Journey",
+    "contact": "Contact"
+  },
+  
+  "map": {
+    "title": "Solar System",
+    "earth": "Earth",
+    "desc_earth": "Click here to learn a bit about me.",
+    "saturn": "Saturn",
+    "desc_saturn": "Projects – see what I've built.",
+    "mars": "Mars",
+    "desc_mars": "Timeline – my journey as a dev.",
+    "uranus": "Uranus",
+    "desc_uranus": "Contact – how to reach me."
   }
+
 }
+

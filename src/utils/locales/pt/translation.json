@@ -8,5 +8,28 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "instagram": "Instagram"
+  },
+
+  "menu": {
+    "home": "Home",
+    "about": "Sobre Mim",
+    "projects": "Projetos",
+    "journey": "Jornada",
+    "contact": "Contato"
+  },
+
+  "map": {
+    "title": "Sistema Solar",
+    "earth": "Terra",
+    "desc_earth": "Clique aqui e conheça um pouco sobre mim.",
+    "saturn": "Saturno",
+    "desc_saturn": "Projetos – veja o que desenvolvi.",
+    "mars": "Marte",
+    "desc_mars": "Linha do tempo – minha jornada como dev.",
+    "uranus": "Urano",
+    "desc_uranus": "Contatos – formas de me encontrar."
   }
 }
+
+  
+
