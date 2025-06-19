@@ -17,7 +17,7 @@ export default function Banner() {
           Design criado por: <strong>Lucas Barbosa S. Sena</strong>
         </h3>
         <p>
-          Navegue pelo Sistema do meu portifólio para explorar meus projetos, habilidades e trajetórias.
+          Navegue pelo sistema do meu portifólio para explorar meus projetos, habilidades e trajetórias.
           <br />
         </p>
         <p>Conecte-se comigo nas redes sociais:</p>
