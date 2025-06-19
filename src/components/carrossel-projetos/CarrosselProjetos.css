@@ -1,81 +1,93 @@
-.carrossel-wrapper {
-  padding: 0 1rem;
-  color: #FFFF82;
-}
-
-.carrossel-wrapper .slick-slide > div {
-  display: flex;
-  justify-content: center;
-}
-
-.carrossel-card {
-  background:black;
+.feed-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   padding: 2rem;
+}
+
+.projeto-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  transition: transform 0.3s ease;
-  max-width: 700px;
-  margin: 0 auto;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
 }
 
-.carrossel-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 1.5rem auto
+.projeto-img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
 }
 
-.carrossel-content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+.projeto-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.projeto-content h2 {
   color: #FFFF82;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .descricao {
-  color: #F7F0F5;
+  color: #ccc;
   margin-bottom: 1rem;
   font-style: italic;
+  font-size: 0.95rem;
 }
 
 .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .tag {
-  background: black;
+  background: #222;
+  border: 1px solid #FFFF82;
   color: #FFFF82;
-  padding: 0.5rem 1rem;
-  margin: 0.3rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 20px;
-  font-size: 0.85rem;
-  display: inline-block;
-  border: 1px solid #444;
+  font-size: 0.8rem;
 }
 
-.detalhes {
-  color: #F7F0F5;
-  line-height: 1.5;
-  font-size: 1rem;
+.botao-projeto {
+  background: #FFFF82;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .carrossel-card {
-    padding: 1.5rem;
-  }
+.botao-projeto:hover {
+  background: #e6e65c;
+}
 
-  .carrossel-content h2 {
-    font-size: 1.4rem;
-  }
+.botao-projeto {
+  background: #FFFF82;
+  color: black;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
 
-  .carrossel-img {
-    max-width: 100%;
-  }
+.botao-projeto:hover {
+  background: #e6d94d;
 }

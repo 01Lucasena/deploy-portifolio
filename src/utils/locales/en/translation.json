@@ -28,7 +28,107 @@
     "desc_mars": "Timeline – my journey as a dev.",
     "uranus": "Uranus",
     "desc_uranus": "Contact – how to reach me."
+  },
+   "terra": {
+    "title": "Earth: Where it all began",
+    "intro": "My journey started here, on the blue planet. This is where my passion for turning ideas into code was born, and where my mission to explore the universe of web development began.",
+    "who": {
+      "title": "Who I Am",
+      "desc": "Hi! I'm Lucas Sena, a Systems Development student at SENAI Dendezeiros (Salvador/BA, Brazil). I'm driven by curiosity and challenges, and passionate about creating meaningful digital solutions."
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "frontend": {
+        "label": "Frontend",
+        "techs": "React, HTML, CSS, JavaScript"
+      },
+      "backend": {
+        "label": "Backend",
+        "techs": "Node.js, Java, Python, C#"
+      },
+      "design": {
+        "label": "Design",
+        "techs": "Figma, Canva"
+      },
+      "extra": {
+        "label": "Extras",
+        "techs": "Git, GitHub, REST APIs"
+      }
+    },
+    "mission": {
+      "title": "My Mission",
+      "desc": "Just like astronauts explore space, I see each project as a mission full of discoveries, challenges, and growth. I aim to build unique, accessible digital experiences with a future-forward mindset."
+    },
+    "techs": {
+      "title": "Technologies I use"
+    }
+  },
+  "saturn": {
+    "title": "Saturn: My Projects",
+    "intro": "Here orbit the projects that marked my evolution as a developer.",
+    "projects": [
+      {
+        "id": 1,
+        "titulo": "Safety Guardians",
+        "descricao": "Game prototype about workplace safety.",
+        "tecnologias": ["Figma", "Teamwork", "Prototyping"],
+        "imagem": "imagemJogo",
+        "detalhes": "Team project created in Figma, focused on education in workplace safety.",
+        "linkExterno": "https://link-do-projeto.com/jogo"
+      },
+      {
+        "id": 2,
+        "titulo": "Intergalactic Portfolio",
+        "descricao": "This very space-themed website.",
+        "tecnologias": ["React", "Framer Motion", "CSS", "Responsive"],
+        "imagem": "imagemPortfolio",
+        "detalhes": "Personal project that represents my identity as a dev.",
+        "linkExterno": "https://link-do-projeto.com/jogo"
+      }
+    ]
+  },
+   "station": {
+    "title": "Mars: The Digital Explorer’s Journey",
+    "description": "Logbook entries from my mission through the universe of development — discoveries, learnings, and achievements paving the way to the future.",
+    "timeline": [
+      {
+        "ano": "2024",
+        "titulo": "Journey Begins",
+        "descricao": "Started the Systems Development course at SENAI Dendezeiros in Salvador, Bahia.",
+        "icone": "rocket"
+      },
+      {
+        "ano": "2024",
+        "titulo": "First Steps",
+        "descricao": "Learned programming logic fundamentals and began working with Java, Python, and C#.",
+        "icone": "code"
+      },
+      {
+        "ano": "2024",
+        "titulo": "Exploring Databases",
+        "descricao": "Introduction to SQL and relational databases.",
+        "icone": "database"
+      },
+      {
+        "ano": "2025",
+        "titulo": "Web Development",
+        "descricao": "Started studying HTML, CSS, and JavaScript.",
+        "icone": "html"
+      }
+    ]
+    },
+    "orion": {
+    "title": "Uranus: Intergalactic Contact",
+    "description": "From Uranus, our interplanetary communication station, you can send me signals, questions, or opportunities. This is the direct channel between your galaxy and my mission as a developer.",
+    "contactTitle": "Contact Frequencies",
+    "emailLabel": "Email",
+    "formTitle": "Send Your Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "sendButton": "Send",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message."
   }
-
 }
 

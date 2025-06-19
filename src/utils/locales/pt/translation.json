@@ -28,8 +28,107 @@
     "desc_mars": "Linha do tempo – minha jornada como dev.",
     "uranus": "Urano",
     "desc_uranus": "Contatos – formas de me encontrar."
+  },
+
+  "terra": {
+    "title": "Terra: onde tudo começou",
+    "intro": "Minha jornada começou aqui, no planeta azul. Foi aqui que nasceu minha paixão por transformar ideias em código e minha missão de explorar o vasto universo do desenvolvimento web.",
+    "who": {
+      "title": "Quem sou eu",
+      "desc": "Olá! Sou Lucas Sena, estudante de Desenvolvimento de Sistemas no SENAI Dendezeiros (Salvador/BA). Sou movido pela curiosidade e motivado por desafios. Amo criar soluções digitais com propósito."
+    },
+    "skills": {
+      "title": "Habilidades Técnicas",
+      "frontend": {
+        "label": "Frontend",
+        "techs": "React, HTML, CSS, JavaScript"
+      },
+      "backend": {
+        "label": "Backend",
+        "techs": "Node.js, Java, Python, C#"
+      },
+      "design": {
+        "label": "Design",
+        "techs": "Figma, Canva"
+      },
+      "extra": {
+        "label": "Extras",
+        "techs": "Git, GitHub, APIs REST"
+      }
+    },
+    "mission": {
+      "title": "Minha Missão",
+      "desc": "Assim como astronautas exploram o espaço, encaro cada projeto como uma missão repleta de descobertas, desafios e crescimento. Quero construir experiências digitais únicas, acessíveis e com visão de futuro."
+    },
+    "techs": {
+      "title": "Tecnologias que uso"
+    }
+    },
+    "saturn": {
+    "title": "Saturno: Meus Projetos",
+    "intro": "Aqui orbitam os projetos que marcaram minha evolução como desenvolvedor.",
+    "projects": [
+      {
+        "id": 1,
+        "titulo": "Guardiões da Segurança",
+        "descricao": "Protótipo de jogo sobre segurança no trabalho.",
+        "tecnologias": ["Figma", "Trabalho em Equipe", "Prototipagem"],
+        "imagem": "imagemJogo",
+        "detalhes": "Projeto criado em equipe no Figma, voltado para educação em segurança no trabalho.",
+        "linkExterno": "https://link-do-projeto.com/jogo"
+      },
+      {
+        "id": 2,
+        "titulo": "Portfólio Intergaláctico",
+        "descricao": "Este próprio site com tema espacial.",
+        "tecnologias": ["React", "Framer Motion", "CSS", "Responsivo"],
+        "imagem": "imagemPortfolio",
+        "detalhes": "Projeto pessoal que representa minha identidade como dev.",
+        "linkExterno": "https://link-do-projeto.com/jogo"
+      }
+    ]
+  },
+  "station": {
+    "title": "Marte: A Jornada do Explorador Digital",
+    "description": "Registros de bordo da minha missão através do universo do desenvolvimento — descobertas, aprendizados e conquistas rumo ao futuro.",
+    "timeline": [
+      {
+        "ano": "2024",
+        "titulo": "Início da Jornada",
+        "descricao": "Comecei o curso de Desenvolvimento de Sistemas no SENAI Dendezeiros em Salvador, Bahia.",
+        "icone": "rocket"
+      },
+      {
+        "ano": "2024",
+        "titulo": "Primeiros Passos",
+        "descricao": "Aprendi os fundamentos de lógica de programação e comecei a trabalhar com Java, Python e C#.",
+        "icone": "code"
+      },
+      {
+        "ano": "2024",
+        "titulo": "Explorando o Banco de Dados",
+        "descricao": "Introdução ao SQL e bancos de dados relacionais.",
+        "icone": "database"
+      },
+      {
+        "ano": "2025",
+        "titulo": "Desenvolvimento Web",
+        "descricao": "Iniciei meus estudos em HTML, CSS e JavaScript.",
+        "icone": "html"
+      }
+    ]
+  },
+   "orion": {
+    "title": "Urano: Contato Intergaláctico",
+    "description": "A partir de Urano, nossa estação de comunicação interplanetária, você pode me enviar sinais, perguntas ou oportunidades. Este é o canal direto entre a sua galáxia e minha missão como desenvolvedor.",
+    "contactTitle": "Frequências de Contato",
+    "emailLabel": "Email",
+    "formTitle": "Mande sua mensagem",
+    "namePlaceholder": "Seu nome",
+    "emailPlaceholder": "Seu e-mail",
+    "messagePlaceholder": "Sua mensagem",
+    "sendButton": "Enviar",
+    "success": "Mensagem enviada com sucesso!",
+    "error": "Erro ao enviar mensagem."
   }
 }
-
-  
-

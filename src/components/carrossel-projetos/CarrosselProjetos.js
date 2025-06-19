@@ -1,42 +1,36 @@
-// src/components/CarrosselProjetos/CarrosselProjetos.jsx
 import React from 'react';
-import Slider from 'react-slick';
 import './CarrosselProjetos.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 export default function CarrosselProjetos({ projetos }) {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
-    arrows: true,
-  };
-
   return (
-    <section className="carrossel-wrapper">
-      <Slider {...settings}>
-        {projetos.map((projeto) => (
-          <div key={projeto.id} className="carrossel-card">
-            <img src={projeto.imagem} alt={projeto.titulo} className="carrossel-img" />
-            <div className="carrossel-content">
-              <h2>{projeto.titulo}</h2>
-              <p className="descricao">{projeto.descricao}</p>
-              <div className="tags">
-                {projeto.tecnologias.map((tech, index) => (
-                  <span key={index} className="tag">{tech}</span>
-                ))}
-              </div>
-              <p className="detalhes">{projeto.detalhes}</p>
+    <div className="feed-container">
+      {projetos.map((projeto) => (
+        <div className="projeto-card" key={projeto.id}>
+          <div
+            className="projeto-img"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,0.9)), url(${projeto.imagem})`,
+            }}
+          />
+          <div className="projeto-content">
+            <h2>{projeto.titulo}</h2>
+            <p className="descricao">{projeto.descricao}</p>
+            <div className="tags">
+              {projeto.tecnologias.map((tech, i) => (
+                <span key={i} className="tag">{tech}</span>
+              ))}
             </div>
+            <a
+              href={projeto.linkExterno}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="botao-projeto"
+            >
+              Saiba mais
+            </a>
           </div>
-        ))}
-      </Slider>
-    </section>
+        </div>
+      ))}
+    </div>
   );
 }

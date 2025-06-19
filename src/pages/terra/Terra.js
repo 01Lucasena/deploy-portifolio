@@ -2,23 +2,20 @@ import React from 'react';
 import PageWrapper from '../../components/page-wrapper/PageWrapper';
 import Tecnologias from '../../components/tecnologias/Tecnologias';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './Terra.css';
 
 export default function Terra() {
+  const { t } = useTranslation();
+
   return (
     <PageWrapper>
       <main className="terra-container">
-        
-          <h1>Terra</h1>
-          <p>
-            Aqui começou minha jornada. No planeta azul, nasceu minha paixão por transformar ideias em código e minha missão de explorar o universo do desenvolvimento web.
-          </p>
+        <h1>{t('terra.title')}</h1>
+        <p>{t('terra.intro')}</p>
 
-          <h2>Quem sou eu</h2>
-          <p>
-            Olá! Sou <strong>Lucas Sena</strong>, estudante de Desenvolvimento de Sistemas no <em>SENAI Dendezeiros</em> (Salvador/BA). Sou movido por desafios e apaixonado por criar soluções digitais que impactam positivamente.
-          </p>
-        
+        <h2>{t('terra.who.title')}</h2>
+        <p>{t('terra.who.desc')}</p>
 
         <motion.section 
           className="habilidades-section"
@@ -26,12 +23,12 @@ export default function Terra() {
           whileInView={{ opacity: 1 }} 
           transition={{ duration: 0.6 }}
         >
-          <h2>Habilidades Técnicas</h2>
+          <h2>{t('terra.skills.title')}</h2>
           <div className="skills-grid">
-            <div><strong>Frontend:</strong> React, HTML, CSS, JavaScript</div>
-            <div><strong>Backend:</strong> Node.js, Java, Python, C#</div>
-            <div><strong>Design:</strong> Figma, Canva</div>
-            <div><strong>Extras:</strong> Git, GitHub, APIs REST</div>
+            <div><strong>{t('terra.skills.frontend.label')}:</strong> {t('terra.skills.frontend.techs')}</div>
+            <div><strong>{t('terra.skills.backend.label')}:</strong> {t('terra.skills.backend.techs')}</div>
+            <div><strong>{t('terra.skills.design.label')}:</strong> {t('terra.skills.design.techs')}</div>
+            <div><strong>{t('terra.skills.extra.label')}:</strong> {t('terra.skills.extra.techs')}</div>
           </div>
         </motion.section>
 
@@ -41,10 +38,8 @@ export default function Terra() {
           whileInView={{ opacity: 1 }} 
           transition={{ duration: 0.6 }}
         >
-          <h2>Minha Missão</h2>
-          <p>
-            Assim como astronautas exploram o espaço em busca do desconhecido, vejo cada projeto como uma missão: cheia de descobertas, obstáculos e crescimento. Quero construir experiências únicas, acessíveis e com visão de futuro.
-          </p>
+          <h2>{t('terra.mission.title')}</h2>
+          <p>{t('terra.mission.desc')}</p>
         </motion.section>
 
         <motion.section 
@@ -53,10 +48,10 @@ export default function Terra() {
           whileInView={{ opacity: 1 }} 
           transition={{ duration: 0.6 }}
         >
-          <h2>Tecnologias que uso</h2>
+          <h2>{t('terra.techs.title')}</h2>
           <Tecnologias />
         </motion.section>
       </main>
     </PageWrapper>
   );
-}
+} 

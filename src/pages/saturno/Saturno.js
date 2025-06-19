@@ -4,33 +4,27 @@ import PageWrapper from '../../components/page-wrapper/PageWrapper';
 import CarrosselProjetos from '../../components/carrossel-projetos/CarrosselProjetos';
 import imagemJogo from '../../assets/prototipo-jogo.png';
 import imagemPortfolio from '../../assets/site_img.png';
+import { useTranslation } from 'react-i18next';
 
 export default function Saturno() {
-  const projetos = [
-    {
-      id: 1,
-      titulo: "Guardiões da Segurança",
-      descricao: "Protótipo de jogo sobre segurança no trabalho.",
-      tecnologias: ["Figma", "Trabalho em Equipe", "Prototipagem"],
-      imagem: imagemJogo,
-      detalhes: "Projeto criado em equipe no Figma, voltado para educação em segurança no trabalho.",
-    },
-    {
-      id: 2,
-      titulo: "Portfólio Intergaláctico",
-      descricao: "Este próprio site com tema espacial.",
-      tecnologias: ["React", "Framer Motion", "CSS", "Responsivo"],
-      imagem: imagemPortfolio,
-      detalhes: "Projeto pessoal que representa minha identidade como dev.",
-    },
-  ];
+  const { t } = useTranslation();
+
+  const imagens = {
+    imagemJogo,
+    imagemPortfolio,
+  };
+
+  const projetos = t('saturn.projects', { returnObjects: true }).map((projeto) => ({
+    ...projeto,
+    imagem: imagens[projeto.imagem] || '',
+  }));
 
   return (
     <PageWrapper>
-        <main className="saturno-container">
+      <main className="saturno-container">
         <section className="saturno-header">
-          <h1>Saturno</h1>
-          <p>Projetos que refletem minha trajetória como desenvolvedor.</p>
+          <h1>{t('saturn.title')}</h1>
+          <p>{t('saturn.intro')}</p>
         </section>
 
         <CarrosselProjetos projetos={projetos} />
