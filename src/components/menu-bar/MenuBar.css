@@ -1,3 +1,4 @@
+/* ========= DESKTOP ========= */
 .menu-bar {
   position: sticky;
   top: 0;
@@ -11,14 +12,14 @@
   z-index: 1000;
 }
 
-/* Estilo padrão dos botões */
+/* Menu itens visível no desktop */
 .menu-items {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-/* Botões do menu */
+/* Botões padrão */
 .menu-items button {
   background: black;
   color: #FFFF82;
@@ -38,9 +39,8 @@
   color: black;
 }
 
-/* Botão Hamburger - escondido no desktop */
+/* ========= HAMBURGER ========= */
 .hamburger {
-  left: 50%;
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -50,9 +50,9 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  position: sticky;
-  right: 2rem;
+  position: fixed;
   top: 1.2rem;
+  left: 1rem;
   z-index: 1100;
 }
 
@@ -62,12 +62,11 @@
   background: #FFFF82;
   border-radius: 2px;
   transition: all 0.3s linear;
-  position: relative;
   transform-origin: 1px;
 }
 
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg);
+  opacity: 0;
 }
 
 .hamburger.open span:nth-child(2) {
@@ -75,15 +74,17 @@
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg);
+  opacity: 0;
 }
 
-/* MOBILE */
+/* ========= MOBILE ========= */
 @media (max-width: 768px) {
+  /* Exibe o hambúrguer */
   .hamburger {
     display: flex;
   }
 
+  /* Oculta o menu lateral por padrão */
   .menu-items {
     position: fixed;
     top: 0;
@@ -100,10 +101,12 @@
     overflow-y: auto;
   }
 
+  /* Exibe o menu ao abrir */
   .menu-items.open {
     transform: translateX(0);
   }
 
+  /* Botões no menu lateral */
   .menu-items button {
     width: 100%;
     font-size: 1.2rem;

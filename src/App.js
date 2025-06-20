@@ -1,7 +1,8 @@
 import './App.css';
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import React from 'react';
+
 
 import Header from './components/header/Header';
 import MenuBar from './components/menu-bar/MenuBar';
@@ -57,16 +58,22 @@ function AppContent() {
             transition={{ duration: 0.3 }}
           >
             <Header />
-            
           </motion.div>
         )}
       </AnimatePresence>
+      
       <MenuBar />
-      <AnimatedRoutes />
+
+      {/* Envolvendo só o conteúdo das rotas */}
+      <div id="main-content">
+        <AnimatedRoutes />
+      </div>
+
       <Footer />
     </BackgroundWrapper>
   );
 }
+
 
 export default function App() {
   return (
