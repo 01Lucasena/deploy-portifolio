@@ -12,8 +12,8 @@ Este portfólio foi criado para mostrar minhas habilidades e projetos utilizando
 
 ## ✨ Funcionalidades
 
-- Páginas temáticas que representam minha jornada (Terra, Saturno, Urano, Orion, Estação Espacial)
-- Carrossel animado para exibição dos projetos
+- Páginas temáticas que representam minha jornada (Terra, Saturno, Urano, Marte)
+- Feed para exibição dos projetos
 - Linha do tempo (timeline) da minha trajetória
 - Formulário de contato integrado com EmailJS
 - Design responsivo e visual agradável com SVGs e gradientes
@@ -30,18 +30,6 @@ Este portfólio foi criado para mostrar minhas habilidades e projetos utilizando
 - SVGs personalizados
 
 ---
-
-## 📁 Estrutura do Projeto
-
-/src
-├── /assets # Imagens, SVGs e ícones usados
-├── /components # Componentes React reutilizáveis (ex: Header, Timeline)
-├── /pages # Páginas temáticas (Terra, Saturno, etc)
-├── App.js # Arquivo principal de rotas e layout
-└── index.js # Entrada da aplicação
-
----
-
 
 ## 📬 Contato
 
