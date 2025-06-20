@@ -27,7 +27,8 @@
     "mars": "Marte",
     "desc_mars": "Linha do tempo – minha jornada como dev.",
     "uranus": "Urano",
-    "desc_uranus": "Contatos – formas de me encontrar."
+    "desc_uranus": "Contatos – formas de me encontrar.",
+    "description": "Explore o sistema solar e descubra minha jornada como desenvolvedor web. Cada planeta representa uma parte da minha história, desde a Terra, onde tudo começou, até Saturno, onde meus projetos orbitam."
   },
 
   "terra": {
@@ -75,7 +76,7 @@
         "tecnologias": ["Figma", "Trabalho em Equipe", "Prototipagem"],
         "imagem": "imagemJogo",
         "detalhes": "Projeto criado em equipe no Figma, voltado para educação em segurança no trabalho.",
-        "linkExterno": "https://link-do-projeto.com/jogo"
+        "linkExterno": "https://www.canva.com/design/DAGqKozh9V8/BedZ7Js2Ky7sT9DVrnlHXA/edit"
       },
       {
         "id": 2,
@@ -84,7 +85,7 @@
         "tecnologias": ["React", "Framer Motion", "CSS", "Responsivo"],
         "imagem": "imagemPortfolio",
         "detalhes": "Projeto pessoal que representa minha identidade como dev.",
-        "linkExterno": "https://link-do-projeto.com/jogo"
+        "linkExterno": "https://github.com/01Lucasena/deploy-portifolio/blob/main/README.md"
       }
     ]
   },

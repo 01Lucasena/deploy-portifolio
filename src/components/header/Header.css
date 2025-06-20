@@ -16,6 +16,12 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
+.banner-buttons{
+  display: flex;
+  gap: 1rem;          /* espaço entre os botões */
+  margin-top: 0.5rem; /* espaçamento em cima */
+  justify-content: normal;
+}
 
 .banner-content {
   flex: 1 1 500px;
@@ -87,8 +93,14 @@
 
 
 @media (max-width: 768px) {
+
+  .astronauta-img {
+    height: auto;
+    transform: scale(0.9);
+    bottom: 0;
+  }
   .banner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     padding: 2rem;
   }
@@ -113,6 +125,23 @@
   .banner-content p {
     font-size: 1rem;
   }
+
+  .social-buttons {
+    justify-content: center;
+  }
+
+  .download-cv-button{
+    align-items: center;
+  }
+
+  .banner-buttons {
+    display: flex;
+    gap: 1rem;          /* espaço entre os botões */
+    margin-top: 0.5rem; /* espaçamento em cima */
+    justify-content: center; /* alinha à esquerda; pode usar center se quiser */
+    flex-wrap: wrap;    /* para quebrar linha no mobile */
+}
+  
 }
 
 .divisoria {
@@ -152,7 +181,6 @@
   text-decoration: none;
   cursor: pointer;
   display: flex;
-  align-items: center;
   gap: 0.5rem;
   
 }
@@ -189,10 +217,3 @@
   font-family: 'Exo 2', sans-serif;
 }
 
-.banner-buttons {
-  display: flex;
-  gap: 1rem;          /* espaço entre os botões */
-  margin-top: 0.5rem; /* espaçamento em cima */
-  justify-content: flex-start; /* alinha à esquerda; pode usar center se quiser */
-  flex-wrap: wrap;    /* para quebrar linha no mobile */
-}

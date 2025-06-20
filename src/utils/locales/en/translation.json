@@ -27,7 +27,8 @@
     "mars": "Mars",
     "desc_mars": "Timeline – my journey as a dev.",
     "uranus": "Uranus",
-    "desc_uranus": "Contact – how to reach me."
+    "desc_uranus": "Contact – how to reach me.",
+    "description": "Explore the solar system and discover my journey as a web developer. Each planet represents a part of my story, from Earth, where it all began, to Saturn, where my projects orbit."
   },
    "terra": {
     "title": "Earth: Where it all began",
@@ -74,7 +75,7 @@
         "tecnologias": ["Figma", "Teamwork", "Prototyping"],
         "imagem": "imagemJogo",
         "detalhes": "Team project created in Figma, focused on education in workplace safety.",
-        "linkExterno": "https://link-do-projeto.com/jogo"
+        "linkExterno": "https://www.canva.com/design/DAGqKozh9V8/BedZ7Js2Ky7sT9DVrnlHXA/edit"
       },
       {
         "id": 2,
@@ -83,7 +84,7 @@
         "tecnologias": ["React", "Framer Motion", "CSS", "Responsive"],
         "imagem": "imagemPortfolio",
         "detalhes": "Personal project that represents my identity as a dev.",
-        "linkExterno": "https://link-do-projeto.com/jogo"
+        "linkExterno": "https://github.com/01Lucasena/deploy-portifolio/blob/main/README.md"
       }
     ]
   },

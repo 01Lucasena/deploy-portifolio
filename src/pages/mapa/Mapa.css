@@ -208,6 +208,14 @@
   box-shadow: 0 0 16px rgba(173,216,255,0.5);
 }
 
+.mapa-descricao{
+  padding: 0 20px;
+  text-align: center;
+  z-index: 5;
+  font-family: 'Exo 2', sans-serif;
+  color: #F7F0F5;
+}
+
 
 
 @media (max-width: 768px) {
@@ -281,6 +289,7 @@
     font-size: 0.75rem !important;
     padding: 0 15px !important;
     top: 40px !important;
+    text-align: center !important;
   }
 
   .mapa-botao {
@@ -351,3 +360,4 @@
   font-family: 'Exo 2', sans-serif;
   line-height: 1.3;
 }
+

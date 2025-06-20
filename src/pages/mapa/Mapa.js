@@ -67,6 +67,7 @@ export default function Mapa() {
       transition={{ duration: 0.5 }}
     >
       <h1 className="mapa-titulo">{t('map.title')}</h1>
+      <p className="mapa-descricao">{t('map.description')}</p>
 
       <br /><br /><br />
 
